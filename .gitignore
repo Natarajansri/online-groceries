@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------------
+# Secrets - NEVER commit the real credentials.
+# config/config.php holds DB_HOST / DB_NAME / DB_USER / DB_PASS.
+# Copy config/config.example.php to config/config.php on each server.
+# ---------------------------------------------------------------------
+/config/config.php
+
+# ---------------------------------------------------------------------
+# Database dumps and backups.
+# NOTE: database.sql IS intentionally tracked - it is the schema + demo
+# seed needed to deploy. Delete these lines if you would rather keep the
+# dump out of Git and share it separately.
+# ---------------------------------------------------------------------
+*.sql.gz
+*.sql.bak
+*.sql~
+/backups/
+/*.dump
+
+# ---------------------------------------------------------------------
+# Runtime / generated files
+# ---------------------------------------------------------------------
+*.log
+error_log
+/uploads/*
+!/uploads/.gitkeep
+
+# ---------------------------------------------------------------------
+# OS and editor clutter
+# ---------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
